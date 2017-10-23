@@ -16,7 +16,7 @@ func (*Parser) Parse(token string) (string, string, error) {
 	// The different parts should be separated with a dot
 	p := strings.Split(token, ".")
 	if len(p) < 2 {
-		return "", "", fmt.Errorf("error: the token doesn't look right")
+		return "", "", fmt.Errorf("the token doesn't look right")
 	}
 
 	// We are only interested in the header and claims
